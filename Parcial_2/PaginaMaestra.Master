@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="Parcial_2.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="PMStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div id="navbar">
+                <br />
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Registracion.aspx" Font-Size="Large">Registración</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/GestionArchivos.aspx" Font-Size="Large">Gestión de Archivos</asp:HyperLink>
+                
+                <br />
+                <br />
+                
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="footer" align="right">
+                <p> ISSD - Laboratorio de Programación 3 - Segundo Parcial</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
